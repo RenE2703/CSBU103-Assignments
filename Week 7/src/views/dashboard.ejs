@@ -1,0 +1,58 @@
+<section class="dashboard-header">
+    <h1>Welcome back, <%= user.username %></h1>
+    <p>Access your projects and manage your account</p>
+</section>
+
+<section class="section">
+    <h2>Your Projects</h2>
+    <div class="projects-grid">
+        <a href="/week2-cv" target="_blank" class="project-card" style="text-decoration: none; color: inherit;">
+            <div class="project-icon">📄</div>
+            <h3>CV Project</h3>
+            <p>Week 2 - Curriculum Vitae</p>
+        </a>
+        <a href="/week4-calculator" target="_blank" class="project-card" style="text-decoration: none; color: inherit;">
+            <div class="project-icon">🧮</div>
+            <h3>Calculator</h3>
+            <p>Week 4 - Math Operations</p>
+        </a>
+        <a href="/week4-gallery" target="_blank" class="project-card" style="text-decoration: none; color: inherit;">
+            <div class="project-icon">🖼️</div>
+            <h3>Photo Gallery</h3>
+            <p>Week 4 - Image Viewer</p>
+        </a>
+    </div>
+</section>
+
+<section>
+    <h2 class="mb-4">Account Information</h2>
+    <div class="info-card">
+        <div class="info-row">
+            <div class="info-label">Username</div>
+            <div class="info-value"><%= user.username %></div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">Full Name</div>
+            <div class="info-value"><%= user.name %></div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">Email</div>
+            <div class="info-value"><%= user.email %></div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">Gender</div>
+            <div class="info-value"><%= user.gender %></div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">Member Since</div>
+            <div class="info-value"><%= new Date(user.createdAt).toLocaleDateString() %></div>
+        </div>
+        <div class="info-row">
+            <div class="info-label">Status</div>
+            <div class="info-value"><span class="status-badge">Active</span></div>
+        </div>
+        <div style="text-align: right; margin-top: 24px; padding-top: 24px; border-top: 1px solid #f0f0f0;">
+            <a href="/logout" class="btn btn-secondary">Logout</a>
+        </div>
+    </div>
+</section>

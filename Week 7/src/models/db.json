@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1765884688888,
+      "email": "erenererophu@gmail.com",
+      "password": "685cda4f708eb200e60a7e04c8c5df7e3f827c912605e41a5ed45acb3b137e9b",
+      "createdAt": "2025-12-16T11:31:28.888Z"
+    },
+    {
+      "_id": "1765887084176",
+      "username": "erenerero",
+      "name": "tuan",
+      "email": "erenerero",
+      "password": "$2b$10$/R39MJNjb9769ETqER8Fz.1rOxWZAj84Fuj0z1tHcP0xQxERqIsDe",
+      "gender": "Male",
+      "contactNo": "",
+      "createdAt": "2025-12-16T12:11:24.176Z"
+    },
+    {
+      "_id": "1765887147921",
+      "username": "sieunhangao",
+      "name": "doanhtuan",
+      "email": "sieunhangao",
+      "password": "$2b$10$sTJi9I7w80GIeoCWKluczeV2qTXDyEJK4C6MMeaKup45um1vERdLm",
+      "gender": "Male",
+      "contactNo": "",
+      "createdAt": "2025-12-16T12:12:27.921Z"
+    }
+  ]
+}
